@@ -1,0 +1,283 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body{
+	
+	font-family: 'Roboto', sans-serif;
+	background-image: url(../images/img.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.overlay{
+	background: rgb(19,164,106);
+	background: linear-gradient(105deg, rgba(19,164,106,1) 18%, rgba(132,69,186,1) 45%, rgba(74,9,121,1) 74%, rgba(31,105,120,1) 99%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	opacity: 50%;
+}	
+.container{
+	width: 550px;
+	margin: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.signup-form{
+	background-color: #fff;
+	padding: 80px 50px;
+	border-radius: 15px;
+	position: relative;
+}
+h1{
+	font-size: 28px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 10px;
+	position: relative;
+}
+p{
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 400;
+	font-size: 14px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+form{
+	padding: 30px 0;
+	position: relative;
+	z-index: 1;
+}
+input{
+	width: 100%;
+	padding: 5px 15px;
+	height: 50px;
+	font-size: 18px;
+	border-radius: 6px;
+	border: 3px solid #333333ab;
+	margin-bottom: 10px ;
+}
+input[type="radio"],
+input[type="checkbox"]{
+	
+	width: 30px;
+	height: 22px;
+	padding: 0;
+	margin-bottom: 0;
+
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+.flex label{
+	margin: 0 30px 0 10px;
+	text-transform: capitalize;
+}
+.flex div{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.col{
+	flex-direction: column;
+	align-items: flex-start;
+}
+label{
+	font-size: 22px;
+}
+strong{
+	display: block;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-size: 22px;
+
+}
+
+select{
+	width: 100%;
+	padding: 5px 15px;
+	height: 50px;
+	font-size: 18px;
+	border-radius: 6px;
+	border: 3px solid #333333ab;
+	margin-bottom: 10px ;
+}
+textarea{
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 18px;
+	border-radius: 6px;
+	border: 3px solid #333333ab;
+	margin-bottom: 10px ;x;
+}
+button{
+
+	padding: 15px 40px;
+	border-radius: 1px solid red;
+	font-size: 20px;
+	border: 1px solid black;
+	color: #fff;
+	border-radius: 30px;
+	width: 100%;
+    background: linear-gradient(214deg, rgb(71 240 172) 18%, rgb(150 101 192) 45%, rgb(117 13 192) 74%, rgb(61 179 203) 99%);
+}
+.curve{
+	width: 62%;
+	height: 30%;
+	position: absolute;
+	background-color: darkred;
+	top: 0;
+    right: 0;
+    border-bottom-left-radius: 100%;
+	z-index: 0;
+	background: linear-gradient(128deg, rgb(71 240 172) 18%, rgb(150 101 192) 45%, rgb(162 43 248) 74%, rgb(61 179 203) 99%);
+}
+
+.movebox{
+	font-size: 50px;
+    color: orangered;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation-name: Move;
+    z-index: 20;
+    animation-duration: 20s;
+    transform: rotate(0deg);
+
+}
+.moveball{
+	font-size: 60px;
+    color: orangered;
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    animation-name: MoveBall;
+    z-index: 22;
+    animation-duration: 20s;
+    transform: rotate(0deg);
+}
+.moveball2{
+	font-size: 60px;
+    color: orangered;
+    position: absolute;
+    top: 3%;
+    left: 69%;
+    animation-name: MoveBall;
+    z-index: 22;
+    animation-duration: 20s;
+    transform: rotate(0deg);
+}
+.moveball3{
+	font-size: 60px;
+    color: orangered;
+    position: absolute;
+    top: 6%;
+    left: 75%;
+    animation-name: MoveBall;
+    z-index: 22;
+    animation-duration: 20s;
+    transform: rotate(0deg);
+}
+.circle1{
+	font-size: 60px;
+    color: orangered;
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    animation-name: Movecircle1;
+    z-index: 22;
+    animation-duration: 20s;
+    transform: rotate(0deg);
+}
+
+.circle2{
+	font-size: 60px;
+    color: orangered;
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    animation-name: Movecircle2;
+    z-index: 22;
+    animation-duration: 20s;
+    transform: rotate(0deg);
+}
+.movesquare{
+	font-size: 60px;
+    color: orangered;
+    position: absolute;
+    top: 12%;
+    left: 8%;
+    animation-name: Movesquare;
+    z-index: 22;
+    animation-duration: 20s;
+    transform: rotate(0deg);
+}
+
+@keyframes Movesquare{
+	to{
+	top: 60%;
+    left: 60%;
+    transform: rotate(180deg);
+	}
+}
+
+@keyframes Movecircle1{
+	to{
+	top: 60%;
+    left: 60%;
+    transform: rotate(180deg);
+	}
+}
+@keyframes Movecircle2{
+	to{
+	top: 99%;
+    left: 20%;
+    transform: rotate(180deg);
+	}
+}
+
+@keyframes Move{
+	to{
+	top: 50%;
+    left: 70%;
+    transform: rotate(180deg);
+	}
+
+
+}
+@keyframes MoveBall2{
+	to{
+	top: 70%;
+    left: 40%;
+    transform: rotate(180deg);
+}
+}
+@keyframes MoveBall3{
+	to{
+	top: 780%;
+    right: 33%;
+    transform: rotate(180deg);
+}
+}
+@keyframes MoveBall{
+	to{
+	top: 60%;
+    left: 20%;
+    transform: rotate(180deg);
+}
+}
