@@ -140,7 +140,7 @@ button{
 	width: 62%;
 	height: 30%;
 	position: absolute;
-	background-color: darkred;
+	
 	top: 0;
     right: 0;
     border-bottom-left-radius: 100%;
@@ -152,46 +152,18 @@ button{
 	font-size: 50px;
     color: orangered;
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 5%;
+    left: 5%;
     animation-name: Move;
     z-index: 20;
     animation-duration: 20s;
     transform: rotate(0deg);
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
 
 }
-.moveball{
-	font-size: 60px;
-    color: orangered;
-    position: absolute;
-    top: 10%;
-    left: 80%;
-    animation-name: MoveBall;
-    z-index: 22;
-    animation-duration: 20s;
-    transform: rotate(0deg);
-}
-.moveball2{
-	font-size: 60px;
-    color: orangered;
-    position: absolute;
-    top: 3%;
-    left: 69%;
-    animation-name: MoveBall;
-    z-index: 22;
-    animation-duration: 20s;
-    transform: rotate(0deg);
-}
-.moveball3{
-	font-size: 60px;
-    color: orangered;
-    position: absolute;
-    top: 6%;
-    left: 75%;
-    animation-name: MoveBall;
-    z-index: 22;
-    animation-duration: 20s;
-    transform: rotate(0deg);
+
+
 }
 .circle1{
 	font-size: 60px;
@@ -201,8 +173,10 @@ button{
     left: 60%;
     animation-name: Movecircle1;
     z-index: 22;
-    animation-duration: 20s;
+    animation-duration: 30s;
     transform: rotate(0deg);
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
 }
 
 .circle2{
@@ -213,8 +187,10 @@ button{
     left: 70%;
     animation-name: Movecircle2;
     z-index: 22;
-    animation-duration: 20s;
+    animation-duration: 30s;
     transform: rotate(0deg);
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
 }
 .movesquare{
 	font-size: 60px;
@@ -224,19 +200,48 @@ button{
     left: 8%;
     animation-name: Movesquare;
     z-index: 22;
-    animation-duration: 20s;
+    animation-duration: 30s;
     transform: rotate(0deg);
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
 }
 
 @keyframes Movesquare{
-	to{
-	top: 60%;
-    left: 60%;
+	25%{
+	top: 20%;
+    left: 20%;
+    transform: rotate(60deg);
+	}
+	50%{
+	top: 35%;
+    left: 25%;
+    transform: rotate(120deg);
+	}
+	90%{
+	top: 16%;
+    left: 12%;
     transform: rotate(180deg);
 	}
+
 }
 
+
 @keyframes Movecircle1{
+	25%{
+	top: 12%;
+    left: 50%;
+    transform: rotate(60deg);
+	}
+	50%{
+	top: 40%;
+    left: 40%;
+    transform: rotate(120deg);
+	}
+	90%{
+	top: 8%;
+    left: 56%;
+    transform: rotate(180deg);
+	}
 	to{
 	top: 60%;
     left: 60%;
@@ -260,24 +265,28 @@ button{
 
 
 }
-@keyframes MoveBall2{
-	to{
-	top: 70%;
-    left: 40%;
-    transform: rotate(180deg);
+
+
+div .img{
+
 }
+svg{
+	bottom: 3%;
+    position: absolute;
 }
-@keyframes MoveBall3{
-	to{
-	top: 780%;
-    right: 33%;
-    transform: rotate(180deg);
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Playfair+Display&display=swap');
+
+
+footer{
+	padding: 20px 0 20px 0;
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+	text-align: center;
+	font-size: 20PX;
+	font-weight: 600;
+	background-color: #5002ca;
 }
-}
-@keyframes MoveBall{
-	to{
-	top: 60%;
-    left: 20%;
-    transform: rotate(180deg);
-}
+
+.width{
+	height: 250px;
 }
