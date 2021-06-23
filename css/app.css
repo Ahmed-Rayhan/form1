@@ -265,15 +265,6 @@ button{
 
 
 }
-
-
-div .img{
-
-}
-svg{
-	bottom: 3%;
-    position: absolute;
-}
 @import url('https://fonts.googleapis.com/css2?family=Benne&family=Playfair+Display&display=swap');
 
 
@@ -289,4 +280,13 @@ footer{
 
 .width{
 	height: 250px;
+}
+
+
+div .img{
+
+}
+svg{
+	bottom: 3%;
+    position: absolute;
 }
